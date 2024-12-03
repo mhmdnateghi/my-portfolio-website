@@ -1,0 +1,507 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: #070E1B;
+  color: #a9adb8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fdfeff;
+}
+
+/*************** Main Button ***************/
+.button {
+  background-color: #fec544;
+  color: #070d1b;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  cursor: pointer;
+  padding: 12px 1.5em;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px 0px #fec64450;
+}
+
+/*************** Title ***************/
+
+.title-shadow {
+  text-align: center;
+  position: relative;
+  margin-top: -5px;
+  margin-bottom: 61px;
+}
+
+.title-shadow h4 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fec544;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 1px;
+}
+
+.title-shadow h4::before {
+  content: '';
+  position: absolute;
+  background-color: #3f4551;
+  width: 170px;
+  height: 2px;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-shadow h4::after {
+  content: '';
+  position: absolute;
+  background-color: #fec544;
+  width: 70px;
+  height: 2px;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 100ms;
+}
+
+.title-shadow h2 {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  font-weight: 700;
+  color: #151b2980;
+  margin: 0;
+  margin-top: -25px;
+  width: 100%;
+}
+
+/*************** NavBar ***************/
+.topnav {
+  font-size: 25px;
+}
+
+.topnav ul {
+  overflow: hidden;
+  background-color: #070E1B;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.topnav ul li {
+  float: left;
+}
+
+.topnav ul li a {
+  display: block;
+  color: #FDFEFF;
+  text-align: center;
+  padding: 35px 16px;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-right: 100px;
+  max-width: 55%;
+  height: auto;
+}
+
+/*************** Banner ***************/
+.banner {
+  background-image: url("./assets/img/stars.jpg");
+  overflow: auto;
+}
+
+.banner-image img {
+  /* object-fit: fill; */
+  width: 40%;
+  height: 40%;
+  float: right;
+}
+
+.banner-text {
+  float: left;
+  margin: 10% 0 0 5%;
+  line-height: 1;
+}
+
+.banner-text h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #FDFEFF;
+  margin: 6% 0;
+}
+
+.banner-text h2 {
+  font-size: 36px;
+  color: #a9adb8;
+  font-weight: 300;
+}
+
+.banner-text h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fec544;
+}
+
+.social-group a {
+  text-decoration: none;
+  color: #FDFEFF;
+}
+
+.social-icon {
+  display: inline-block;
+  border: 0.2rem solid #FDFEFF;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon img {
+  transform: scale(1.5);
+  object-fit: contain;
+}
+
+/*************** About Me ***************/
+.about-me {
+  display: block;
+  overflow: hidden;
+}
+
+.about-me-right {
+  width: 50%;
+  float: right;
+}
+
+.about-me-left {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.about-me-right h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+.about-me-right h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fec544;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.about-me-left img {
+  display: block;
+  margin: auto;
+  height: 480px;
+}
+
+.about-me-right p {
+  display: block;
+  width: 520px;
+  color: #a9adb8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.about-me-right ul {
+  list-style: none;
+  color: #a9adb8;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-right ul li {
+  margin-bottom: 14px;
+  display: list-item;
+}
+
+.about-me-right ul li span:nth-child(1) {
+  display: inline-block;
+  width: 108px;
+  margin-right: -5px;
+}
+
+.about-me-right ul li span:nth-child(2) {
+  display: inline-block;
+  width: 208px;
+  margin-right: 7px;
+}
+
+/*************** Services ***************/
+.services {
+  display: block;
+  position: relative;
+  background-color: #0A101E;
+  padding-top: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.services-card {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+  border: 1px solid #232935;
+  background-color: #101624;
+}
+
+.services-title {
+  font-weight: 400px;
+  line-height: 1.2em;
+  font-size: 20px;
+  margin-bottom: 16px;
+  transition: all 0.4s ease;
+}
+
+.services-card:hover .services-title {
+  color: #fec544;
+}
+
+.services-icon {
+  background-color: #070D1B;
+  border-radius: 50%;
+  padding: 1.5em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-shrink: 0;
+  border: solid 1.5px #3f4551;
+  transition: all 0.4s ease;
+}
+
+.services-card:hover .services-icon {
+  border: solid 1.5px #fec544;
+}
+
+.services-icon svg {
+  fill: #3f4551;
+  transition: all 0.4s ease;
+}
+
+.services-card:hover .services-icon svg {
+  fill: #FEC544;
+}
+
+/*************** My Skills ***************/
+.skills {
+  display: block;
+  background-color: #070D1B;
+}
+
+.skills-left {
+  width: 50%;
+  float: left;
+  padding-right: 4em;
+  padding-left: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-left h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.skills-left p {
+  line-height: 1.6rem;
+  width: 100%;
+}
+
+.skills-right {
+  width: 50%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress {
+  margin-top: 15px;
+  width: 80%;
+}
+
+.progress-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.progress h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.progress-percentage {
+  color: #fec544;
+  font-weight: 400;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #3f4551;
+}
+
+.progress-fill {
+  background-color: #fec544;
+  height: 2px;
+}
+
+/*************** Resume ***************/
+.resume {
+  background-color: #070D1B;
+  display: block;
+  clear: both;
+  border: 2px solid #ff0000;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.experience,
+.education {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  width: 47%;
+  border: 2px solid #2f00ff;
+}
+
+.resume-heading {
+  display: flex;
+  align-items: center;
+}
+
+.resume-heading h2 {
+  margin: 0;
+  margin-left: 30px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.timeline {
+  padding-left: 40px;
+  margin-left: 20px;
+  border-left: 1px solid #232935;
+}
+
+.resume-height {
+  height: 50px;
+}
+
+.resume-timeline {
+  position: relative;
+  padding-top: 1px;
+}
+
+.resume-timeline::before {
+  position: absolute;
+  content: "";
+  border: 2px solid #232935;
+  border-radius: 50%;
+  background-color: #101624;
+  width: 13px;
+  height: 13px;
+  top: 0px;
+  left: -47px;
+  transition: all 0.4s ease;
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fec544;
+  margin-top: -7px;
+  margin-bottom: 8px;
+}
+
+.timeline-duration {
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.timeline-location {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+
+.timeline-text p {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+/*******************************************/
+/*************** Responsive ***************/
+/*****************************************/
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
