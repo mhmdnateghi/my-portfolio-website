@@ -345,6 +345,13 @@ const Banner = () => {
           </div>
         </div>
       </section>
+      {/*************** portfolios ***************/}
+      <section className="portfolios">
+        <div className="title-shadow">
+          <h2>portfolios</h2>
+          <h4>portfolios</h4>
+        </div>
+      </section>
     </>
   );
 };
