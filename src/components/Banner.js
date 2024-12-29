@@ -4,6 +4,12 @@ import Twitter from "../assets/img/twitter-brands-solid.svg";
 import AboutMe from "../assets/img/AboutMe.JPG";
 import ExperienceIcon from "../assets/img/resume-icon1.png";
 import EducationIcon from "../assets/img/resume-icon2.png";
+import portfolioImg1 from "../assets/img/portfolio1_lg.jpg";
+import portfolioImg2 from "../assets/img/portfolio2_lg.jpg";
+import portfolioImg3 from "../assets/img/portfolio3_lg.jpg";
+import portfolioImg4 from "../assets/img/portfolio4_lg.jpg";
+import portfolioImg5 from "../assets/img/portfolio5_lg.jpg";
+import portfolioImg6 from "../assets/img/portfolio6_lg.jpg";
 
 const Banner = () => {
   return (
@@ -350,6 +356,69 @@ const Banner = () => {
         <div className="title-shadow">
           <h2>portfolios</h2>
           <h4>portfolios</h4>
+        </div>
+
+        <div className="portfolios-container">
+          <div className="portfolios-box">
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg1} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg2} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg3} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg4} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg5} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+
+            <div className="box-container">
+              <div className="box-items">
+                <div className="box-image">
+                  <img src={portfolioImg6} alt="portfolioImg1" />
+                </div>
+                <div className="box-content"></div>
+              </div>
+            </div>
+          </div>
+          <div className="portfolios-button">
+            <a href="#DownloadCV" className="button">
+              Load More
+            </a>
+          </div>
         </div>
       </section>
     </>

@@ -491,6 +491,30 @@ h6 {
   margin-bottom: 7px;
 }
 
+/*************** portfolios ***************/
+.portfolios {
+  display: block;
+  background-color: #0A101E;
+  padding-top: 20px;
+}
+
+.portfolios-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.box-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.portfolios-button {
+  text-align: center;
+}
+
 /*******************************************/
 /*************** Responsive ***************/
 /*****************************************/
